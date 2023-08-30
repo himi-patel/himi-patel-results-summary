@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
   <title>Frontend Mentor | Results summary component</title>
@@ -37,7 +36,7 @@
       grid-template-columns: 1fr 1fr;
       background-color: rgb(255, 255, 255);
       border-radius: 15px;
-     box-shadow: 0px 0px 20px 0px rgba(114, 152, 255, 0.449);
+      box-shadow: 0px 0px 20px 0px rgba(114, 152, 255, 0.449);
       overflow: hidden;
       text-align: center;
 
@@ -60,11 +59,10 @@
     }
     .result .circle
     {
-    width: 150px;
-    height: 150px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       background: linear-gradient(rgb(71, 13, 231),hsla(241, 72%, 46%, 0.048)) ;
-      /* padding: 35px; */
       margin: auto;
       color: white;
       margin-top: 20px;
@@ -78,9 +76,9 @@
     }
     .result .circle p
     {
-color: hsl(241, 100%, 89%);
-font-size: 18px;
-margin-top: -19px;
+      color: hsl(241, 100%, 89%);
+      font-size: 18px;
+      margin-top: -19px;
     }
     .txt h1
     {
@@ -99,7 +97,7 @@ margin-top: -19px;
     .header
     {
       float: left;
-    margin-bottom: 20px;
+      margin-bottom: 20px;
     }
     .summary h4
     {
@@ -112,7 +110,7 @@ margin-top: -19px;
       padding: 10px 27px;
       clear: both;
       border-radius: 7px;
-     margin-bottom: 15px;
+      margin-bottom: 15px;
       background-color: red;
     }
     .summary .box1 h1
@@ -208,22 +206,39 @@ margin-top: -19px;
   
 <div class="container">
   <div class="card">
+
     
     <div class="result">
+      
+      <header> 
       <h3>Your Result</h3>
+      </header>
+      
+      <section>
       <div class="circle">
         <h1> 76</h1>
         <p>of 100</p>
       </div>
+      </section>
+      
+      <footer>
       <div class="txt">
         <h1>Great</h1>
         <p>You scored higher than 65% of the people who have taken these tests.</p>
       </div>
     </div>
+  </footer>
+    
     <div class="summary">
+
+      <header>
       <div class="header">
       <h4>  Summary</h4>
       </div>
+      </header>
+
+      
+      <section>
       <div class="box1" id="bx1">
         <h1><img src="assets/images/icon-reaction.svg" alt="">  Reaction</h1>
         <p>80  <span>/ 100</span></p>
@@ -240,7 +255,13 @@ margin-top: -19px;
         <h1><img src="assets/images/icon-visual.svg" alt="">    Visual</h1>
         <p>72  <span>/ 100</span></p>
       </div>
+      </section>
+      
+      <footer>
       <button>Continue</button>
+      </footer>
+
+      
     </div>
   </div>
 </div>
